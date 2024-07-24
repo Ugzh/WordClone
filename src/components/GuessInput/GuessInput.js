@@ -9,9 +9,7 @@ function GuessInput({ handleSumbitGuess, guesses, answer }) {
     handleSumbitGuess(tentativeGuess);
     setTentativeGuess("");
   }
-
   const [disabled, setDisabled] = React.useState(false);
-
   return (
     <div>
       <form className="guess-input-wrapper" onSubmit={handleSumbit}>
@@ -29,6 +27,7 @@ function GuessInput({ handleSumbitGuess, guesses, answer }) {
           }}
         ></input>
       </form>
+
       <GameOverBanner
         value={guesses}
         answer={answer}
